@@ -7,7 +7,6 @@ const initialState = {
     purchased: false
 }
 
-
 const reducer = (state = initialState, action) => {
     switch (action.type) {
 
@@ -28,7 +27,7 @@ const reducer = (state = initialState, action) => {
             return updateObject(state, {loading: true})
 
         case actionTypes.FETCH_ORDERS_SUCCESS:
-            return updateObject(state, {orders: action.order, loading: false})
+            return updateObject(state, {orders: action.orders, loading: false})
 
         case actionTypes.FETCH_ORDERS_FAIL:
             return updateObject(state, {loading: false})
