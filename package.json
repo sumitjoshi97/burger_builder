@@ -95,7 +95,7 @@
     "extends": "react-app"
   },
   "main": "index.js",
-  "repository": "https://github.com/sumitjoshi97/burger_react.git",
+  "repository": "https://github.com/sumitjoshi97/burger_builder.git",
   "author": "Sj",
   "license": "MIT"
 }
