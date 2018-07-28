@@ -17,7 +17,7 @@ import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './store/reducers/index';
 
 //redux deev tools - advanced for +async calls
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__:null || compose;
 
 //store for redux
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
